@@ -1,0 +1,38 @@
+{
+  "name": "novel-library",
+  "version": "2.0.0",
+  "description": "A TypeScript library for HTML in JS.",
+  "author": "owls-on-wires",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/owls-on-wires/novel.git"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "npm run clean && rollup -c && tsc --emitDeclarationOnly",
+    "clean": "rm -rf dist",
+    "dev": "rollup -c -w",
+    "test": "jest"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "26.0.1",
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "@rollup/plugin-typescript": "11.1.6",
+    "eslint": "8.57.1",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-prettier": "5.2.1",
+    "jest": "28.1.0",
+    "rollup": "4.50.1",
+    "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "@types/jquery": "3.5.33",
+    "jquery": "3.7.1"
+  }
+}
