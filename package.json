@@ -1,11 +1,11 @@
 {
-  "name": "novel-library",
+  "name": "@owls-on-wires/novel",
   "version": "1.0.0",
   "description": "A TypeScript library for HTML in JS.",
   "author": "owls-on-wires",
   "repository": {
     "type": "git",
-    "url": "https://github.com/owls-on-wires/novel.git"
+    "url": "git+https://github.com/owls-on-wires/novel.git"
   },
   "main": "dist/index.js",
   "module": "dist/index.mjs",

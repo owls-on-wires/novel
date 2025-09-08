@@ -5,13 +5,13 @@ A TypeScript library for creating native HTML DOM elements using functions.
 ## Installation
 
 ```bash
-npm install novel-library
+npm install @owls-on-wires/novel
 ```
 
 ## Usage
 
 ```javascript
-import { html } from 'novel-library';
+import { html } from '@owls-on-wires/novel';
 
 // Create elements that return native HTMLElement objects
 const button = html.button({ onclick: () => alert('Hello!') }, 'Click me');
@@ -71,7 +71,7 @@ You can use either `className` or `classes` for CSS classes. If both are provide
 Novel is useful for building reusable components. Here's a simple component that uses jQuery for rendering:
 
 ```javascript
-import { html } from 'novel-library';
+import { html } from '@owls-on-wires/novel';
 import $ from 'jquery';
 
 function Counter(id, initialCount = 0) {
